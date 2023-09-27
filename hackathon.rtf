@@ -97,9 +97,23 @@ class EnvironmentAnalyzerApp1  \{\
     \}\
 \
     // Water Quality Analysis\
-    System.out.println("        Water Quality Index of " + location + " is " + waterQualityIndex + "\\n\\n");\
+    System.out.println("        Water Quality Index of " + location + " is " + waterQualityIndex + "\\n\\n");
+    if(waterQualityIndex>=90 && waterQualityIndex <=100)
+    System.out.println("Water is of high quality, safe for drinking, and recreational activities");
+   else if(waterQualityIndex>=70 && waterQualityIndex <=89)
+    System.out.println("Water is generally safe for drinnking and recreational activities");
+   else if(waterQualityIndex>=50 && waterQualityIndex <=69)
+    System.out.println("Water may be suitable for some uses but not be safe for drinking without treatment");
+   else if(waterQualityIndex>=25 && waterQualityIndex <=49)
+   System.out.println("Water is of poor quality an may require significant treatment for safe use");
+   else
+   System.out.println("Water is highly poluted and not suitable for most uses without extensive treatment");
+
+
+    
 \
-    System.out.println("Following efforts can be done to reduce the amount of pollutants in the air.");\
+\
+    \
 \}\
 \
     \}\
